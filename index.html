@@ -1,102 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Product preview card component</title>
   <!-- link some font families -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&display=swap" rel="stylesheet">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-  <!-- Styles for project -->
-  <style>
-    main {
-      height: 90vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #F3EAE3;
-    }
-    .text-montserrat {
-      font-family: 'Montserrat', sans-serif;
-    }
-    .text-fraunces {
-      font-family: 'Fraunces', serif;
-    }
-    div#description > button {
-      width: 100%;
-      background-color: #3D8168;
-      color: white;
-      margin-top: 20px;
-      padding-top: 6px;
-      padding-bottom: 6px;
-      border: none;
-      border-radius: 7px;
-    }
-    div#description > button:hover {
-      background-color: green;
-    }
-    div#description > p:first-child {
-      letter-spacing: 6px;
-      font-size: 0.6em;
-      margin-top: 25px;
-    }
-    div#description > h1 {
-      line-height: 105%;
-    }
-    div#description > p {
-      line-height: 135%;
-    }
-    main > * {
-      width: 300px;
-      height: 400px;
-      box-sizing: border-box;
-    }
-    div#description {
-      padding: 0px 20px 20px 20px;
-      background-color: #FFFFFF;
-    }
-    div#prices > span:first-child {
-      color: #3D8168;
-      font-size: 2em;
-      font-weight: bolder;
-      margin-right: 18px;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <main>
-    <img src="images/image-product-desktop.jpg" alt="perfume">
-    <div id="description">
-      <p class="text-montserrat">
-        PERFUME</p>
-      <h1 class="text-fraunces">
-        Gabrielle<br>
-        Essence Eau<br>
-        De Parfum
-      </h1>
-      <p class="text-montserrat">
-        A floral, solar and voluptuous<br>
-        interpretation composed by<br>
-        Olivier Polge, Perfumer-Creator<br>
+    <div class="contenedor-imagen-producto">
+    </div>
+    <div class="contenedor-info-producto">
+      <p class="parrafo1">PERFUME</p>
+      <h1 class="heading1">Gabrielle Essence Eau De Parfum</h1>
+      <p class="parrafo1 description">
+        A floral, solar and voluptuos interpretation
+        composed by Olivier Polge, Perfumer-Creator
         for the House of CHANEL.
       </p>
-      <div id="prices">
-        <span class="text-fraunces">$149.99</span><span class="text-montserrat">$169.99</span><br>
-      </div>
-      <button class="text-montserrat">Add to Cart</button>
+      <h1 class="heading1 last">$149.99</h1>
+      <p class="parrafo1 last">$169.99</p>
+      <button>Add to Cart</button>
     </div>
   </main>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
+
 </html>

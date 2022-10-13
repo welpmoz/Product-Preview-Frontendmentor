@@ -1,0 +1,130 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: hsl(26, 40%, 92%);
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+main>* {
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.contenedor-info-producto {
+  padding: 45px 48px;
+  background-color: white;
+}
+
+.parrafo1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.heading1 {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+div.contenedor-info-producto>p:first-child {
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.41em;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+div.contenedor-info-producto>h1:first-child {
+  line-height: 115%;
+  letter-spacing: 0.03em;
+  color: black;
+}
+
+div.contenedor-info-producto>p.description {
+  font-size: 13px;
+  line-height: 180%;
+  letter-spacing: 0.05em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+div.contenedor-info-producto>h1.last {
+  line-height: 110%;
+  letter-spacing: 0.05em;
+  color: #3d8168;
+  display: inline-block;
+}
+
+div.contenedor-info-producto>p.last {
+  font-size: 12px;
+  line-height: 110%;
+  letter-spacing: 0.02em;
+  text-decoration: line-through;
+  display: inline-block;
+  margin-left: 15%;
+}
+
+div.contenedor-info-producto>button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 110%;
+  letter-spacing: 0.02em;
+  background-color: #3d8168;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 20px 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* agregar la imagen */
+div.contenedor-imagen-producto {
+  background-image: url('./images/image-product-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* estilos para movil */
+@media (max-width: 800px) {
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    min-width: 375px;
+    height: 602px;
+  }
+
+  div.contenedor-imagen-producto {
+    height: 40%;
+    background-image: url('./images/image-product-mobile.jpg');
+  }
+
+  div.contenedor-info-producto>* {
+    margin-bottom: 5px;
+  }
+
+  .contenedor-info-producto {
+    height: 60%;
+    padding: 2px;
+    background-color: white;
+    padding: 5px 25px;
+  }
+
+  div.contenedor-info-producto>button {
+    padding: 15px 0;
+  }
+}
